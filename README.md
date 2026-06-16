@@ -8,7 +8,7 @@
 
 ## Screenshots
 
-<img src="docs/screenshots/menu.png" width="220" alt="Menu bar menu showing profiles"> <img src="docs/screenshots/preferences.png" width="460" alt="Preferences window">
+<img src="docs/screenshots/menu.png" width="220" alt="Menu bar menu showing profiles" style="vertical-align: top"> <img src="docs/screenshots/preferences.png" width="460" alt="Preferences window" style="vertical-align: top">
 
 ---
 
