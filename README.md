@@ -30,7 +30,7 @@ A lightweight macOS menu bar app that lets you switch audio input/output devices
 **Requirements:** Xcode Command Line Tools (`xcode-select --install`)
 
 ```bash
-git clone https://github.com/YOUR_USER/SoundSwitcher.git
+git clone https://github.com/augustose/SoundSwitcher.git
 cd SoundSwitcher
 make install   # builds, bundles, and copies to /Applications
 ```

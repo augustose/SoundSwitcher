@@ -20,7 +20,7 @@ release: bundle
 	zip -r $(RELEASE_ZIP) $(APP_BUNDLE)
 	@echo ""
 	@echo "✅ Release ready: $(RELEASE_ZIP)"
-	@echo "   Upload to: https://github.com/YOUR_USER/SoundSwitcher/releases/new"
+	@echo "   Upload to: https://github.com/augustose/SoundSwitcher/releases/new"
 
 install: bundle
 	cp -r $(APP_BUNDLE) /Applications/
