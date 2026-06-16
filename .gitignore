@@ -1,0 +1,28 @@
+# Swift build artifacts
+.build/
+*.o
+*.d
+
+# App bundle (distributed via GitHub Releases, not committed)
+*.app
+*.zip
+*.dmg
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+.swiftpm/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.icloud
+
+# Editor
+.vscode/
+.cursor/
+*.swp
+*.swo
