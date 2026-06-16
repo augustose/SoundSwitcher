@@ -27,7 +27,7 @@ A lightweight macOS menu bar app that lets you switch audio input/output devices
    - Go to **System Settings → Privacy & Security** and click **Open Anyway**
 4. The app icon appears in the menu bar
 
-> **Requires:** macOS 13 Ventura or later · Apple Silicon (M1/M2/M3/M4)
+> **Requires:** macOS 13 Ventura or later · Apple Silicon (Apple Silicon (M1 and later))
 
 ### Option B: Build from source
 
