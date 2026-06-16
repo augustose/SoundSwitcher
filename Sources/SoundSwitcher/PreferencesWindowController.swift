@@ -24,7 +24,7 @@ class PreferencesWindowController: NSWindowController {
             backing: .buffered,
             defer: false
         )
-        win.title = "SoundSwitcher — Perfiles"
+        win.title = "SoundSwitcher — Profiles"
         win.contentView = hostingView
         win.center()
         win.setFrameAutosaveName("PreferencesWindow")

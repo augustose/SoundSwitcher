@@ -4,6 +4,10 @@ A lightweight macOS menu bar app that lets you switch audio input/output devices
 
 ![macOS](https://img.shields.io/badge/macOS-13%2B-blue) ![Swift](https://img.shields.io/badge/Swift-5.9-orange) ![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-arm64-green)
 
+## Screenshots
+
+<img src="docs/screenshots/menu.png" width="220" alt="Menu bar menu showing profiles"> <img src="docs/screenshots/preferences.png" width="460" alt="Preferences window">
+
 ## Features
 
 - **⌥⌘S** — cycle through your configured audio profiles

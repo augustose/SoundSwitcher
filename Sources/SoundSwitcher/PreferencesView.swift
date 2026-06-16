@@ -38,14 +38,14 @@ struct PreferencesView: View {
                         Image(systemName: "plus")
                     }
                     .buttonStyle(.borderless)
-                    .help("Agregar perfil")
+                    .help("Add profile")
 
                     Button(action: deleteSelected) {
                         Image(systemName: "minus")
                     }
                     .buttonStyle(.borderless)
                     .disabled(selectedProfileID == nil)
-                    .help("Eliminar perfil")
+                    .help("Delete profile")
 
                     Spacer()
                 }
@@ -64,7 +64,7 @@ struct PreferencesView: View {
             } else {
                 VStack {
                     Spacer()
-                    Text("Selecciona un perfil")
+                    Text("Select a profile")
                         .foregroundColor(.secondary)
                     Spacer()
                 }
@@ -99,7 +99,7 @@ struct PreferencesView: View {
     }
 
     private func addProfile() {
-        let p = Profile(name: "Nuevo perfil", outputDevice: "built-in", inputDevice: "built-in")
+        let p = Profile(name: "New profile", outputDevice: "built-in", inputDevice: "built-in")
         manager.profiles.append(p)
         selectedProfileID = p.id
     }
@@ -128,10 +128,10 @@ struct ProfileDetailView: View {
     var body: some View {
         Form {
             Section {
-                TextField("Nombre del perfil", text: $profile.name)
+                TextField("Profile name", text: $profile.name)
                     .textFieldStyle(.roundedBorder)
             } header: {
-                Text("Nombre")
+                Text("Name")
                     .font(.headline)
                     .padding(.bottom, 4)
             }
@@ -140,7 +140,7 @@ struct ProfileDetailView: View {
 
             Section {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Dispositivo de salida (speaker)")
+                    Text("Output device (speaker)")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
 
@@ -153,7 +153,7 @@ struct ProfileDetailView: View {
                     .frame(maxWidth: .infinity)
 
                     if !outputDevices.contains(where: { $0.name.lowercased().contains(profile.outputDevice.lowercased()) }) {
-                        Label("Dispositivo no conectado — se usará el actual como fallback", systemImage: "exclamationmark.triangle")
+                        Label("Device not connected — current device will be used as fallback", systemImage: "exclamationmark.triangle")
                             .font(.caption)
                             .foregroundColor(.orange)
                     }
@@ -164,7 +164,7 @@ struct ProfileDetailView: View {
 
             Section {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Dispositivo de entrada (micrófono)")
+                    Text("Input device (microphone)")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
 
@@ -177,7 +177,7 @@ struct ProfileDetailView: View {
                     .frame(maxWidth: .infinity)
 
                     if !inputDevices.contains(where: { $0.name.lowercased().contains(profile.inputDevice.lowercased()) }) {
-                        Label("Dispositivo no conectado — se usará el actual como fallback", systemImage: "exclamationmark.triangle")
+                        Label("Device not connected — current device will be used as fallback", systemImage: "exclamationmark.triangle")
                             .font(.caption)
                             .foregroundColor(.orange)
                     }
@@ -186,7 +186,7 @@ struct ProfileDetailView: View {
 
             Divider().padding(.vertical, 4)
 
-            Text("El patrón de nombre se compara sin distinción de mayúsculas. Conecta el dispositivo para verlo en la lista.")
+            Text("Name is matched as a case-insensitive substring. Connect the device to see it in the list.")
                 .font(.caption)
                 .foregroundColor(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -196,7 +196,6 @@ struct ProfileDetailView: View {
     }
 
     private func substringKey(_ name: String) -> String {
-        // Store a unique substring that identifies this device
         name.lowercased()
     }
 }

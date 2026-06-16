@@ -32,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.removeAllItems()
 
         // Profiles section
-        let header = NSMenuItem(title: "Perfiles", action: nil, keyEquivalent: "")
+        let header = NSMenuItem(title: "Profiles", action: nil, keyEquivalent: "")
         header.isEnabled = false
         menu.addItem(header)
         menu.addItem(.separator())
@@ -67,15 +67,15 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(inItem)
 
         menu.addItem(.separator())
-        let configItem = NSMenuItem(title: "Preferencias…", action: #selector(openPreferences), keyEquivalent: ",")
+        let configItem = NSMenuItem(title: "Preferences…", action: #selector(openPreferences), keyEquivalent: ",")
         configItem.target = self
         menu.addItem(configItem)
         menu.addItem(.separator())
-        let shortcutInfo = NSMenuItem(title: "Atajo: ⌥⌘S", action: nil, keyEquivalent: "")
+        let shortcutInfo = NSMenuItem(title: "Shortcut: ⌥⌘S", action: nil, keyEquivalent: "")
         shortcutInfo.isEnabled = false
         menu.addItem(shortcutInfo)
         menu.addItem(.separator())
-        menu.addItem(NSMenuItem(title: "Salir", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
     }
 
     @objc func selectProfile(_ sender: NSMenuItem) {

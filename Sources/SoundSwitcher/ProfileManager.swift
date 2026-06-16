@@ -81,7 +81,7 @@ class ProfileManager: ObservableObject {
             Profile(name: "MacBook", outputDevice: "built-in", inputDevice: "built-in"),
             Profile(name: "Headset", outputDevice: "headphone", inputDevice: "headphone"),
             Profile(name: "AirPods", outputDevice: "airpod", inputDevice: "airpod"),
-            Profile(name: "Oficina", outputDevice: "built-in", inputDevice: "external"),
+            Profile(name: "Office", outputDevice: "built-in", inputDevice: "external"),
         ]
     }
 }
