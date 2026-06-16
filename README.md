@@ -1,5 +1,7 @@
 # SoundSwitcher
 
+![SoundSwitcher](docs/screenshots/MacOSSoundProfileSwitcher.png)
+
 > Switch your entire audio setup — speaker and microphone — with a single keystroke.
 
 ![macOS](https://img.shields.io/badge/macOS-13%2B-blue) ![Swift](https://img.shields.io/badge/Swift-5.9-orange) ![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-M1%20and%20later-green) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
